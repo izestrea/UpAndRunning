@@ -1,13 +1,19 @@
 <!DOCTYPE html>
+<!-- Module example -->
 <html ng-app="notesApp">
 <head>
 	<title>Hello AngularJS</title>
 </head>
-<body>
+<!-- Creating controller -->
+<body ng-controller="MainCtrl">
 	Hello {{1 +1}}nd time AngularJS
-	<script scr="js/lib/angular.min.js"></script>
+	<script src="js/lib/angular.min.js"></script>
 	<script type="text/javascript">
 		angular.module('notesApp',[]);
+		.controller('MainCtrl', [function(){
+			// Controller specific code here
+			console.log("MainCtrl has been created");
+		}]);
 	</script>
 </body>
 </html>
