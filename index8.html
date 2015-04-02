@@ -3,11 +3,11 @@
 <html ng-app="notesApp">
 
 <head>
-	<title>Notes App</title>	
+	<title>Notes App</title>
 </head>
 
-<body ng-controller="MainCtrl as ctrl">
-	
+<body ng-controller="MainCtrl as ctrl"> 
+
 	<button ng-click="ctrl.changeNotes()">Change Notes</button>
 	<br/>
 	DOM Elements change every time someone clicks
@@ -23,10 +23,10 @@
 		<span class="label">{{note.label}}</span>
 		<span class="author" ng-bind="note.done"></span>
 	</div>
-	<script 
+	<script
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
 	</script>
-	
+
 	<script type="text/javascript">
 		angular.module('notesApp', [])
 			.controller('MainCtrl', [function() {
@@ -40,7 +40,7 @@
 					},{
 						id: 2,
 						label: 'Second Note',
-						done: false						
+						done: false
 					},
 					{
 						id: 3,
